@@ -1,6 +1,6 @@
 import { BaseComponentContext } from '@microsoft/sp-component-base';
 import { PeoplePicker, PrincipalType } from "@pnp/spfx-controls-react/lib/PeoplePicker";
-import { Stack } from 'office-ui-fabric-react';
+import { Label, Stack } from 'office-ui-fabric-react';
 import * as React from 'react';
 
 export interface helloWorldProps {
@@ -22,17 +22,23 @@ export const HelloWorld = ({ context }: helloWorldProps): JSX.Element => {
         defaultSelectedUsers={selectedUserId}
         titleText="People Picker"
         personSelectionLimit={3}
-        groupName={"Team Site Owners"} // Leave this blank in case you want to filter from all users
         showtooltip={true}
         required={true}
-        disabled={true}
+
         onChange={(items) => {
           setSelectUserId(items.map(item => item.id));
         }}
-        showHiddenInUI={false}
-        principalTypes={[PrincipalType.User]}
-        resolveDelay={1000} />
 
+        principalTypes={[PrincipalType.User]}
+ />
+
+      <Label>Selected ({selectedUserId.length})</Label>
+      <ul>
+        {selectedUserId.map(user => (
+          <li key={user}>{user}</li>
+        ))}
+        
+      </ul>
     </Stack>
   );
 
