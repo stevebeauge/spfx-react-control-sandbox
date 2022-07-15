@@ -11,10 +11,6 @@ export const HelloWorld = ({ context }: helloWorldProps): JSX.Element => {
 
   const [selectedUserId, setSelectUserId] = React.useState<string[]>([]);
 
-  // const onChange = useCallback((items) => {
-  //   setSelectUserId(items.map(item => item.id));
-  // }, []);
-
   return (
     <Stack>
       <PeoplePicker
