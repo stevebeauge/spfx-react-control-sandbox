@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.0",
+    "libraryName": "spfx-react-control-sandbox",
+    "libraryId": "84c5b51d-0932-4eee-9e94-ba6279f697a0",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "spfx-react-control-sandbox",
+    "solutionShortDescription": "spfx-react-control-sandbox description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

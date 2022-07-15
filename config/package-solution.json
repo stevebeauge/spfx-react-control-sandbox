@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-react-control-sandbox-client-side-solution",
+    "id": "84c5b51d-0932-4eee-9e94-ba6279f697a0",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "spfx-react-control-sandbox description"
+      },
+      "longDescription": {
+        "default": "spfx-react-control-sandbox description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "spfx-react-control-sandbox Feature",
+        "description": "The feature that activates elements of the spfx-react-control-sandbox solution.",
+        "id": "ae1283e7-1002-4912-aa6f-2e94ca624c80",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-react-control-sandbox.sppkg"
+  }
+}
